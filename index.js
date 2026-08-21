@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let herois = [
     { nome: "Arthur", xp: 500 },
     { nome: "Carlos", xp: 2500 },
@@ -29,3 +30,36 @@ for (let i = 0; i < herois.length; i++) {
 
     console.log(`O Herói de nome ${herois[i].nome} está no nível de ${nivel}`);
 }
+=======
+let herois = [
+    { nome: "Arthur", xp: 500 },
+    { nome: "Carlos", xp: 2500 },
+    { nome: "João", xp: 6500 },
+    { nome: "Lucas", xp: 12000 }
+];
+
+for (let i = 0; i < herois.length; i++) {
+    let nivel = "";
+    let xp = herois[i].xp;
+
+    if (xp < 1000) {
+        nivel = "Ferro";
+    } else if (xp <= 2000) {
+        nivel = "Bronze";
+    } else if (xp <= 5000) {
+        nivel = "Prata";
+    } else if (xp <= 7000) {
+        nivel = "Ouro";
+    } else if (xp <= 8000) {
+        nivel = "Platina";
+    } else if (xp <= 9000) {
+        nivel = "Ascendente";
+    } else if (xp <= 10000) {
+        nivel = "Imortal";
+    } else {
+        nivel = "Radiante";
+    }
+
+    console.log(`O Herói de nome ${herois[i].nome} está no nível de ${nivel}`);
+}
+>>>>>>> 4636e976794be614823351891a6990fafd48ce9e
